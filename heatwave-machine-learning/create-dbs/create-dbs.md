@@ -22,15 +22,15 @@ In this lab, you will be guided through the following tasks:
 
 1. Click **Navigation Menu** in the up-left corner of the page
 
-    ![VCN](./images/01dashboard.png"dashboard")
+    ![VCN](./images/01dashboard.png "dashboard")
 
 2. Click **Virtual Cloud Networks**
 
-    ![VCN](./images/03vcn-nav-menu.png"vcn-nav-menu")
+    ![VCN](./images/03vcn-nav-menu.png "vcn-nav-menu")
 
 3. Click **Start VCN Wizard**
 
-    ![VCN](./images/03vcn-wizard.png"vcn-wizard")
+    ![VCN](./images/03vcn-wizard.png "vcn-wizard")
 
 4. Select 'Create VCN with Internet Connectivity'
 
