@@ -161,15 +161,15 @@ The Cloud Shell machine is a small virtual machine running a Bash shell which yo
     - Go to Navigation Menu
             Compute
             Instances
-    ![CONNECT](./images/db-list.png "db-list")
+    ![CONNECT](./images/05compute-instance-list.png "compute-instance-list")
 
     - Click the `MDS-Client` Compute Instance link
 
-    ![CONNECT](./images/05compute-intance-link.png "compute-intance-link ")
+    ![CONNECT](./images/05compute-intance-link.png "compute-instance-link ")
 
     - Copy `MDS-Client` plus  the `Public IP Address` to the notepad
 
-2. Copy the private IP address of the active MySQl Database Service Instance to your notepad
+2. Copy the private IP address of the active MySQL Database Service Instance to your notepad
 
     - Go to Navigation Menu
             Databases

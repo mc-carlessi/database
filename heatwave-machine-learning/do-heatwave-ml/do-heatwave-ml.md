@@ -176,10 +176,10 @@ In this lab, you will be guided through the following task:
     <copy>CALL sys.ML_EXPLAIN_TABLE('ml_data.iris_test', @iris_model, 'ml_data.iris_explanations', JSON_OBJECT('prediction_explainer', 'permutation_importance'));</copy>
     ```
 
-4. Query the table ML\_EXPLAIN\_TABLE  to view the results
+4. Query the table ML\_EXPLAIN\_TABLE  to view the results and verify if the prediction is correct
 
     ```bash
-    <copy> SELECT * FROM iris_explanations LIMIT 3\G;</copy>
+    <copy> SELECT * FROM iris_explanations LIMIT 8\G</copy>
     ```
 
      **Note**  Your output should look like this:

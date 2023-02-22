@@ -160,7 +160,7 @@ In this lab, you will be guided through the following tasks:
 
 5. If the connection test is successful, run the application as follows:
 
-    **http://computeIP/index.php**
+    **http://150.230..../index.php**
 
     ![MDS](./images/iris-web-php.png "iris-web-php")
 
