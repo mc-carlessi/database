@@ -127,9 +127,10 @@ In this lab, you will be guided through the following tasks:
     ![VCN](./images/03vcn-public-security-lists.png"vcn-public-security-lists")
 
 18. On Security List for Public Subnet-MDS-VCN page under 'Ingress Rules', click '**Add Ingress Rules**'
+
     ![VCN](./images/03vcn-ingress.png "vcn-ingress ")
 
-19. On Add Ingress Rules page under Ingress Rule 1
+19. On Add Ingress Rules page click 'Add Ingress Rule'
 
     Add an Ingress Rule with Source CIDR
 
@@ -149,8 +150,7 @@ In this lab, you will be guided through the following tasks:
     <copy>HTTP Access</copy>
     ```
 
-    Click 'Add Ingress Rule'
-        ![VCN](./images/03vcn-ingress-rule-80.png "vcn-ingress-rule-80")
+    ![VCN](./images/3vcn-ingress-rule-80.png "vcn-ingress-rule-80")
 
 20. On Security List for Public Subnet-MDS-VCN page, the new Ingress Rules will be shown under the Ingress Rules List
     ![VCN](./images/03vcn-public-ingress-rule-list.png "vcn-public-ingress-rule-list")
