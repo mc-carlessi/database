@@ -81,7 +81,7 @@ In this lab, you will be guided through the following tasks:
 
     ![VCN](./images/03vcn-ingress.png "vcn-ingress ")
 
-12. On Add Ingress Rules page under Ingress Rule 1
+12. On Add Ingress Rules page click 'Add Ingress Rule'
 
     Add an Ingress Rule with Source CIDR
 
@@ -101,9 +101,7 @@ In this lab, you will be guided through the following tasks:
     <copy>MySQL Port Access</copy>
     ```
 
-    Click 'Add Ingress Rule'
-
-        ![VCN](./images/03vcn-ingress-rule.png "vcn-ingress-rule")
+   ![VCN](./images/03vcn-ingress-rule.png "vcn-ingress-rule")
 
 13. On Security List for Private Subnet-MDS-VCN page, the new Ingress Rules will be shown under the Ingress Rules List
 
