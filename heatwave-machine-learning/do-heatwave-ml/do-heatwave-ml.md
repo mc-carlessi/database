@@ -56,7 +56,7 @@ In this lab, you will be guided through the following task:
     <copy>GRANT SELECT, EXECUTE ON sys.* TO 'user_name'@'%';</copy>
     ```
 
-## Task 2: load training and test data
+## Task 2: Load training and test data
 
 1. To Create the Machine Learning schema and tables on the MySQL HeatWave DB System perform download the sample database with this command:
 
