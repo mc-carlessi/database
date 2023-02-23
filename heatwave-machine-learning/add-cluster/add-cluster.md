@@ -100,7 +100,7 @@ The Cloud Shell machine is a small virtual machine running a Bash shell which yo
 
     ![CONNECT](./images/cloudshell-key-display.png "cloudshell-key-display ")
 
-5. Copy the MDS-Client.pub content to the notepad
+5. Copy the MDS-Client.pub content to the notepad without any change (leave it as one line of text)
 
     Your notepad should look similar to this
     ![CONNECT](./images/notepad-rsa-key.png "notepad-rsa-key ")
@@ -138,7 +138,7 @@ The Cloud Shell machine is a small virtual machine running a Bash shell which yo
 
 14. 'Assign a public IP' address should be set to Yes
 
-    ![CONNECT](./images/05compute-ip.png "compute-ip ")
+      ![CONNECT](./images/05compute-ip.png "compute-ip ")
 
 15. On Add SSH keys, paste the public key from the notepad.
 
@@ -190,7 +190,7 @@ The Cloud Shell machine is a small virtual machine running a Bash shell which yo
 
     Enter the username **opc** and your Public **IP Address**.
 
-    Note: The **MDS-Client**  shows the  Public IP Address as mentioned on TASK 5: #11
+    Note: The **MDS-Client**  shows the  Public IP Address as mentioned on TASK 3: #1
 
     (Example: **ssh -i MDS-Client opc@132.145.170...**)
 
@@ -206,9 +206,7 @@ The Cloud Shell machine is a small virtual machine running a Bash shell which yo
 
     Install MySQL Shell with the following command
 
-    **[opc@…]$**
-
-    ```bash
+        ```bash
     <copy>sudo yum install mysql-shell -y</copy>
     ```
 
@@ -226,9 +224,7 @@ The Cloud Shell machine is a small virtual machine running a Bash shell which yo
 
     (Example  **mysqlsh -uadmin -p -h10.0.1..   --sql**)
 
-    **[opc@...]$**
-
-    ```bash
+        ```bash
     <copy>mysqlsh -uadmin -p -h 10.0.1.... --sql</copy>
     ```
 

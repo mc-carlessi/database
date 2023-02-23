@@ -110,19 +110,19 @@ In this lab, you will be guided through the following tasks:
 14. Because we want also create a web application in last lab, we open now the port 80/HTTP. <br>
     Click **Navigation Menu**, **Networking**, then **Virtual Cloud Networks**
 
-    ![VCN](./images/03vcn-nav-menu.png"vcn-nav-menu")
+    ![VCN](./images/03vcn-nav-menu.png "vcn-nav-menu")
 
 15. Click the VCN name '**MDS-VCN**' to show the subnets
 
-    ![VCN](./images/03vcn-list.png"vcn-list")
+    ![VCN](./images/03vcn-list.png "vcn-list")
 
 16. Click the subnet '**Public Subnet-MDS-VCN**' to show the associated security lists
 
-    ![VCN](./images/03vcn-create-display.png"vcn-create-display")
+    ![VCN](./images/03vcn-create-display.png "vcn-create-display")
 
 17. On Public Subnet-MDS-VCN page under 'Security Lists', click '**Default Security List for MDS-VCN**'
 
-    ![VCN](./images/03vcn-public-security-lists.png"vcn-public-security-lists")
+    ![VCN](./images/03vcn-public-security-lists.png "vcn-public-security-lists")
 
 18. On Security List for Public Subnet-MDS-VCN page under 'Ingress Rules', click '**Add Ingress Rules**'
 
@@ -200,9 +200,9 @@ In this lab, you will be guided through the following tasks:
 
     **Enter Username** : admin 
 
-    **Enter Password** : 
+    **Enter Password** : Welcome#123
 
-    **Confirm Password** (value should match the password for later use)
+    **Confirm Password** : Welcome#123
 
     ![MDS](./images/04mysql-set-password.png "mysql-set-password")
 
@@ -228,7 +228,7 @@ In this lab, you will be guided through the following tasks:
 
     ![MDS](./images/04mysqlset-backup.png "mysqlset-backup")
 
-9. Go to the Networking tab, in the Hostname field enter (same as DB System Name):
+9. Under '**Advanced Options**', go to the Networking tab, in the Hostname field enter (same as DB System Name):
 
     ```bash
     <copy>MDS-HW</copy>
@@ -236,7 +236,7 @@ In this lab, you will be guided through the following tasks:
 
 10. Click the '**Create**' button
 
-    ![MDS](./images/04mysql-create-button.png " mysql_create-button")
+    ![MDS](./images/04mysql-create-button.png "mysql_create-button")
 
     
 
@@ -244,13 +244,13 @@ In this lab, you will be guided through the following tasks:
 
     The state will be shown as 'Creating' during the creation
 
-    ![MDS](./images/04mysql-create-display.png"mysql-create-display ")
+    ![MDS](./images/04mysql-create-display.png "mysql-create-display")
 
 12. The state 'Active' indicates that the DB System is ready for use
 
     On MDS-HW Page, check the MySQL Endpoint (Private IP Address)
 
-    ![MDS](./images/04mysql-create-active.png"mysql-create-active ")
+    ![MDS](./images/04mysql-create-active.png "mysql-create-active")
 
 ## Acknowledgements
 

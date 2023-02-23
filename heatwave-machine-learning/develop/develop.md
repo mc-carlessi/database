@@ -23,7 +23,9 @@ In this lab, you will be guided through the following tasks:
 
 ## TASK 1: Install Web Server (APACHE)
 
-1. If not already connected with SSH, on Command Line, connect to the Compute instance using SSH ... be sure to replace the  "private key file"  and the "new compute instance IP".
+1. If you are still in MySQL Shell, exit typing '\q' [ENTER].
+
+   If not already connected with SSH, on Command Line, connect to the Compute instance using SSH ... be sure to replace the  "private key file"  and the "new compute instance IP".
 
     ```bash
         <copy>ssh -i private_key_file opc@new_compute_instance_ip</copy>
@@ -46,7 +48,7 @@ In this lab, you will be guided through the following tasks:
     c. Start Apache
 
     ```bash
-    <copy>sudo systemctl restart httpd</copy>
+    <copy>sudo systemctl start httpd</copy>
     ```
 
     d. Setup firewall
@@ -55,7 +57,7 @@ In this lab, you will be guided through the following tasks:
     <copy>sudo firewall-cmd --permanent --add-port=80/tcp</copy>
     ```
 
-    e. Reload firewall
+    e. Reload firewall in order to load PHP rules
 
     ```bash
     <copy>sudo firewall-cmd --reload</copy>

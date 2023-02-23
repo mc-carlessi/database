@@ -42,7 +42,7 @@ In this lab, you will be guided through the following task:
 
     ![Connect](./images/heatwave-load-shell.png "heatwave-load-shell ")
 
-3. In this lab we use the administrative account previously created, but if you want to use a dedicated MySQL user, please remember to grant the following privileges to use HeatWave ML
+3. This step is optional in this lab, because we use the administrative account previously created, but if you want to use a dedicated MySQL user, please remember to grant the following privileges to use HeatWave ML
 
     a. SELECT and ALTER privileges on the schema that contains the machine learning datasets
 
@@ -94,7 +94,7 @@ In this lab, you will be guided through the following task:
     <copy>CALL sys.ML_TRAIN('ml_data.iris_train', 'class',JSON_OBJECT('task', 'classification'), @iris_model);</copy>
     ```
 
-2. When the training operation finishes, the model handle is assigned to the @iris_model session variable, and the model is stored in your model catalog. You can view the entry in your model catalog using the following query, where user1 is your MySQL account name:
+2. When the training operation finishes, the model handle is assigned to the @iris_model session variable, and the model is stored in your model catalog. You can view the entry in your model catalog using the following query, where the model handle contains your MySQL account name:
 
     ```bash
     <copy>SELECT model_id, model_handle, train_table_name FROM ML_SCHEMA_admin.MODEL_CATALOG;</copy>
@@ -141,10 +141,10 @@ In this lab, you will be guided through the following task:
 3. Generate an explanation for the same row of data using the ML\_EXPLAIN\_ROW routine to understand how the prediction was made:
 
     ```bash
-    <copy>SELECT JSON_PRETTY(sys.ML_EXPLAIN_ROW(@row_input, @iris_model, JSON_OBJECT('prediction_explainer', 'permutation_importance')));;</copy>
+    <copy>SELECT JSON_PRETTY(sys.ML_EXPLAIN_ROW(@row_input, @iris_model, JSON_OBJECT('prediction_explainer', 'permutation_importance')));</copy>
     ```
 
-    The attribution values show which features contributed most to the prediction, with petal length and pedal width being the most important features. The other features have a 0 value indicating that they did not contribute to the prediction.
+    The attribution values show which features contributed most to the prediction, with petal length and sepal length being the most important features. The other features have a 0 value indicating that they did not contribute to the prediction.
 
     **Note**  Your output should look like this:
     ![MDS](./images/iris-ml-explain-out.png "iris-ml-predict-out ")
